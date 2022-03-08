@@ -15,7 +15,11 @@ class TestimoniController extends Controller
      */
     public function index()
     {
-        //
+        return view('testimonial', [
+            'title' => 'Testimoni | Restoran',
+            'page' => 'Testimonial',
+            'testimonis' => Testimoni::all()
+        ]);
     }
 
     /**

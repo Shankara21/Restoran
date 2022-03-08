@@ -14,11 +14,13 @@
                 <a href="service.html" class="nav-item nav-link">Service</a>
                 <a href="/menu" class="nav-item nav-link {{ Request::is('menu') ? 'active' : '' }}">Menu</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <a href="#"
+                        class="nav-link dropdown-toggle {{ Request::is('team','testimoni','booking') ? 'active' : '' }}"
+                        data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu m-0">
-                        <a href="booking.html" class="dropdown-item">Booking</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="/booking" class="dropdown-item">Booking</a>
+                        <a href="/team" class="dropdown-item">Our Team</a>
+                        <a href="/testimoni" class="dropdown-item">Testimonial</a>
                     </div>
                 </div>
                 <a href="/contact" class="nav-item nav-link {{ Request::is('contact') ? 'active' : '' }}">Contact</a>
@@ -29,14 +31,14 @@
 
     <div class="container-xxl py-5 bg-dark hero-header mb-5">
         <div class="container text-center my-5 pt-5 pb-4">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Food Menu</h1>
-            <nav aria-label="breadcrumb">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">{{ $page }}</h1>
+            {{-- <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center text-uppercase">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
                 </ol>
-            </nav>
+            </nav> --}}
         </div>
     </div>
 </div>
