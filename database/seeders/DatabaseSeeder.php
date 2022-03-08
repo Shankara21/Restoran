@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Chef;
+use App\Models\Service;
+use App\Models\Testimoni;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +16,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // Chef::factory(8)->create();
+        // Service::factory(8)->create();
+        Testimoni::factory(8)->create();
+        $this->call([
+            MenuSeeder::class,
+            ChefSeeder::class,
+            ServiceSeeder::class,
+        ]);
     }
 }

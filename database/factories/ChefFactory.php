@@ -13,8 +13,11 @@ class ChefFactory extends Factory
      */
     public function definition()
     {
+        $name = $this->faker->name;
+        $position = $this->faker->jobTitle;
         return [
-            //
+            'name' => $name,
+            'position' => $position,
         ];
     }
 }

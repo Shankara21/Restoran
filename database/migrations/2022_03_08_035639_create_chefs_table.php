@@ -17,6 +17,7 @@ class CreateChefsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('position');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

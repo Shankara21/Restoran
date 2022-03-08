@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Testimoni;
 use Illuminate\Database\Seeder;
 
 class TestimoniSeeder extends Seeder
@@ -13,6 +14,6 @@ class TestimoniSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Testimoni::factory(8)->create();
     }
 }
