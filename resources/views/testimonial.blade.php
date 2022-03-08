@@ -10,13 +10,14 @@
             <h1 class="mb-5">Our Clients Say!!!</h1>
         </div>
         <div class="owl-carousel testimonial-carousel">
-            @foreach ($testimonis as $t)
+            @foreach ($testimonials as $t)
 
             <div class="testimonial-item bg-transparent border rounded p-4">
                 <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
                 <p>{{ $t->comment }}</p>
                 <div class="d-flex align-items-center">
-                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="https://source.unsplash.com/50x50/?people"
+                        style="width: 50px; height: 50px;">
                     <div class="ps-3">
                         <h5 class="mb-1">{{ $t->name }}</h5>
                         <small>{{ $t->proffesion }}</small>

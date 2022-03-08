@@ -38,22 +38,22 @@ class ChefSeeder extends Seeder
             [
                 'name' => 'Larue Krajcik',
                 'position' => 'Saute Chef',
-                'image' => 'chef5.jpg',
+                'image' => 'chef1.jpg',
             ],
             [
                 'name' => 'Jamal Goodwin',
                 'position' => 'Fish Chef',
-                'image' => 'chef6.jpg',
+                'image' => 'chef2.jpg',
             ],
             [
                 'name' => 'Adelle Little',
                 'position' => 'Roast Chef',
-                'image' => 'chef7.jpg',
+                'image' => 'chef3.jpg',
             ],
             [
                 'name' => 'Naomi Roob',
                 'position' => 'Grill Chef',
-                'image' => 'chef8.jpg',
+                'image' => 'chef4.jpg',
             ],
         ]);
     }

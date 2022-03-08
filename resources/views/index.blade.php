@@ -315,7 +315,7 @@
                 <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
                 <p>{{ $testimonial -> comment }}</p>
                 <div class="d-flex align-items-center">
-                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="https://source.unsplash.com/50x50/?people"
                         style="width: 50px; height: 50px;">
                     <div class="ps-3">
                         <h5 class="mb-1">{{ $testimonial -> name }}</h5>

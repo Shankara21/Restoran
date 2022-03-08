@@ -11,6 +11,9 @@ class AboutController extends Controller
     {
         return view('about', [
             'chefs' => Chef::take(4)->get(),
+            'title' => 'About Us',
+            'page' => 'About Us',
+            'url' => '/about'
         ]);
     }
 }

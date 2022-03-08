@@ -18,7 +18,9 @@ class ChefController extends Controller
         return view('team', [
             'title' => 'Team | Restoran',
             'page' => 'Team',
-            'teams' => Chef::all()
+            'teams' => Chef::all(),
+            'title' => 'Team',
+            'page' => 'Team',
         ]);
     }
 
