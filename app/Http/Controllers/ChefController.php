@@ -15,7 +15,11 @@ class ChefController extends Controller
      */
     public function index()
     {
-        //
+        return view('team', [
+            'title' => 'Team | Restoran',
+            'page' => 'Team',
+            'teams' => Chef::all()
+        ]);
     }
 
     /**

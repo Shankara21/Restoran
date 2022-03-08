@@ -14,7 +14,7 @@ class ChefFactory extends Factory
     public function definition()
     {
         return [
-            //
+
         ];
     }
 }

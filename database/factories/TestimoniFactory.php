@@ -14,7 +14,9 @@ class TestimoniFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->name(),
+            'proffesion' => $this->faker->jobTitle(),
+            'comment' => $this->faker->realText()
         ];
     }
 }
