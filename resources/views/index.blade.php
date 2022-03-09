@@ -132,7 +132,7 @@
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <h5 class="d-flex justify-content-between border-bottom pb-2">
                                         <span>{{ $drink -> name }}</span>
-                                        <span class="text-primary">{{ $drink -> price }}</span>
+                                        <span class="text-primary">Rp. {{ number_format($drink -> price) }}</span>
                                     </h5>
                                     <small class="fst-italic">{{ $drink -> description }}</small>
                                 </div>
@@ -152,7 +152,7 @@
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <h5 class="d-flex justify-content-between border-bottom pb-2">
                                         <span>{{ $snack -> name }}</span>
-                                        <span class="text-primary">{{ $snack -> price }}</span>
+                                        <span class="text-primary">Rp. {{ number_format($snack -> price) }}</span>
                                     </h5>
                                     <small class="fst-italic">{{ $snack -> description }}</small>
                                 </div>
@@ -172,7 +172,7 @@
                                 <div class="w-100 d-flex flex-column text-start ps-4">
                                     <h5 class="d-flex justify-content-between border-bottom pb-2">
                                         <span>{{ $food -> name }}</span>
-                                        <span class="text-primary">{{ $food -> price }}</span>
+                                        <span class="text-primary">Rp. {{ number_format($food -> price) }}</span>
                                     </h5>
                                     <small class="fst-italic">{{ $food -> description }}</small>
                                 </div>
